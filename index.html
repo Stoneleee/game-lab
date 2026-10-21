@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Stone 的游戏实验室</title><style>
+body{margin:0;font-family:system-ui,-apple-system,"PingFang SC",sans-serif;background:#1b1d2b;color:#fff}
+main{max-width:640px;margin:0 auto;padding:24px 16px}h1{font-size:28px;margin:8px 0}p.sub{color:#9aa0c3;margin:0 0 20px}
+a.card{display:flex;gap:14px;align-items:center;background:#2c3050;border-radius:16px;padding:16px;margin-bottom:12px;color:#fff;text-decoration:none}
+a.card:active{transform:scale(.98)}.e{font-size:40px}.n{font-weight:700;font-size:18px}.d{color:#9aa0c3;font-size:14px;margin-top:4px}.go{margin-left:auto;color:#ffc857;font-weight:700}
+</style></head><body><main><h1>🎮 Stone 的游戏实验室</h1><p class="sub">AI 辅助开发的小游戏试验场 · 点开即玩</p><div id="list">加载中…</div></main>
+<script>
+fetch('games.json').then(r=>r.json()).then(gs=>{document.getElementById('list').innerHTML=gs.map(g=>
+`<a class="card" href="${g.slug}/"><span class="e">${g.emoji||'🎲'}</span><span><div class="n">${g.name}</div><div class="d">${g.desc}</div></span><span class="go">开玩 →</span></a>`).join('')})
+.catch(()=>{document.getElementById('list').textContent='游戏列表加载失败'});
+</script></body></html>
