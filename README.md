@@ -6,9 +6,9 @@ GitHub Pages 站点：首页列出所有游戏（由 `games.json` 渲染），�
 index.html          # 游戏列表页（读取 games.json）
 games.json          # 游戏清单
 stack-tower/        # 叠叠高的构建产物（vite build 输出）
-<slug>/             # 其他 20 款小游戏的构建产物（g2048、merge、flappy …）
+<slug>/             # 其他 70 款小游戏的构建产物（g2048、merge、flappy …）
 src-games/stack-tower/  # 叠叠高源码（独立 Vite + TypeScript + Phaser 4 项目）
-src-games/_lib/     # 20 款小游戏共用的 Canvas 引擎（engine.ts）和 index.html 模板
+src-games/_lib/     # 70 款小游戏共用的 Canvas 引擎（engine.ts）和 index.html 模板
 src-games/<slug>/   # 每款小游戏的源码：index.html + main.ts
 src-games/build-all.mjs  # 一键构建所有小游戏到仓库根 /<slug>/
 ```
