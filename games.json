@@ -1,3 +1,23 @@
 [
-  {"slug":"stack-tower","name":"叠叠高 Stack Tower","desc":"单键点击叠方块，对得越准塔越高。","emoji":"🧱"}
+  {"slug":"stack-tower","name":"叠叠高","desc":"单键叠方块，每 10 层换场景，能叠到外太空吗？","emoji":"🧱","cat":"反应"},
+  {"slug":"g2048","name":"2048","desc":"滑动合并相同数字，拼出 2048。","emoji":"🔢","cat":"益智"},
+  {"slug":"merge","name":"合成大球","desc":"投下小球，相同的球碰撞合成更大的球。","emoji":"🍉","cat":"合成"},
+  {"slug":"flappy","name":"飞飞鸟","desc":"点击扇动翅膀，穿过一根根水管。","emoji":"🐤","cat":"反应"},
+  {"slug":"snake","name":"贪吃蛇","desc":"滑动转向吃果子，越长越难。","emoji":"🐍","cat":"经典"},
+  {"slug":"breakout","name":"打砖块","desc":"移动挡板反弹小球，打碎所有砖块。","emoji":"🧨","cat":"物理"},
+  {"slug":"mines","name":"扫雷","desc":"靠数字推理，翻开所有安全格子。","emoji":"💣","cat":"益智"},
+  {"slug":"match3","name":"宝石消消乐","desc":"交换宝石三连消除，连锁分数翻倍。","emoji":"💎","cat":"益智"},
+  {"slug":"sudoku","name":"数独","desc":"经典 9×9 数独，越快完成分越高。","emoji":"🧮","cat":"数字"},
+  {"slug":"tetris","name":"方块消除","desc":"旋转下落的方块，填满整行消除。","emoji":"🟦","cat":"经典"},
+  {"slug":"clicker","name":"摸鱼大师","desc":"90 秒疯狂点击摸鱼，升级自动摸鱼。","emoji":"🐟","cat":"放置"},
+  {"slug":"runner","name":"酷跑小子","desc":"点击跳跃躲障碍、吃金币，越跑越快。","emoji":"🏃","cat":"反应"},
+  {"slug":"blockfit","name":"方块填填乐","desc":"把方块拖进棋盘，凑满行列就消除。","emoji":"🧩","cat":"益智"},
+  {"slug":"sort","name":"彩球排序","desc":"把彩球按颜色整理进管子里。","emoji":"🧪","cat":"益智"},
+  {"slug":"hoops","name":"指尖投篮","desc":"向上滑动投篮，连进得分翻倍。","emoji":"🏀","cat":"物理"},
+  {"slug":"whack","name":"打地鼠","desc":"60 秒手速挑战，小心别打到炸弹。","emoji":"🐹","cat":"反应"},
+  {"slug":"memory","name":"翻牌记忆","desc":"翻开两张找相同，考验记忆力。","emoji":"🃏","cat":"益智"},
+  {"slug":"mathrush","name":"极速口算","desc":"判断算式对错，限时越来越短。","emoji":"➗","cat":"数字"},
+  {"slug":"dodge","name":"躲避陨石","desc":"驾驶飞船躲开不断落下的陨石。","emoji":"☄️","cat":"反应"},
+  {"slug":"tiles","name":"别踩白块","desc":"只点黑块，速度越来越快。","emoji":"🎹","cat":"反应"},
+  {"slug":"schulte","name":"舒尔特方格","desc":"按 1→25 顺序点数字，训练专注力。","emoji":"🔟","cat":"数字"}
 ]
