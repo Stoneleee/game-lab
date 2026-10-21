@@ -1,0 +1,1 @@
+{"compilerOptions":{"target":"ES2022","module":"ESNext","moduleResolution":"bundler","strict":false,"noImplicitAny":false,"lib":["ES2022","DOM"],"skipLibCheck":true,"types":[]},"include":["_lib","*/main.ts"],"exclude":["stack-tower"]}
