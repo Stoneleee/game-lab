@@ -1,0 +1,230 @@
+{
+ "frames": {
+  "conveyor_0": {
+   "frame": {
+    "x": 330,
+    "y": 0,
+    "w": 128,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 64
+   },
+   "anchor": {
+    "x": 0,
+    "y": 0
+   }
+  },
+  "conveyor_1": {
+   "frame": {
+    "x": 0,
+    "y": 130,
+    "w": 128,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 64
+   },
+   "anchor": {
+    "x": 0,
+    "y": 0
+   }
+  },
+  "conveyor_2": {
+   "frame": {
+    "x": 130,
+    "y": 130,
+    "w": 128,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 64
+   },
+   "anchor": {
+    "x": 0,
+    "y": 0
+   }
+  },
+  "conveyor_3": {
+   "frame": {
+    "x": 260,
+    "y": 130,
+    "w": 128,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 64
+   },
+   "anchor": {
+    "x": 0,
+    "y": 0
+   }
+  },
+  "gate_closed": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 128
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 1
+   }
+  },
+  "gate_half": {
+   "frame": {
+    "x": 66,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 128
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 1
+   }
+  },
+  "gate_open": {
+   "frame": {
+    "x": 132,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 128
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 1
+   }
+  },
+  "switch_off": {
+   "frame": {
+    "x": 198,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 128
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 1
+   }
+  },
+  "switch_on": {
+   "frame": {
+    "x": 264,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 128
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 1
+   }
+  }
+ },
+ "meta": {
+  "app": "flip-trap build_art7.py",
+  "image": "flip-trap-b7.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 512,
+   "h": 256
+  },
+  "scale": "1"
+ }
+}
