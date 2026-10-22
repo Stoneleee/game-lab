@@ -1,0 +1,350 @@
+{
+ "frames": {
+  "chasewall_body_0": {
+   "frame": {
+    "x": 0,
+    "y": 98,
+    "w": 192,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 64
+   },
+   "anchor": {
+    "x": 1,
+    "y": 0
+   }
+  },
+  "chasewall_body_1": {
+   "frame": {
+    "x": 194,
+    "y": 98,
+    "w": 192,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 64
+   },
+   "anchor": {
+    "x": 1,
+    "y": 0
+   }
+  },
+  "chasewall_body_2": {
+   "frame": {
+    "x": 0,
+    "y": 164,
+    "w": 192,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 64
+   },
+   "anchor": {
+    "x": 1,
+    "y": 0
+   }
+  },
+  "chasewall_body_3": {
+   "frame": {
+    "x": 194,
+    "y": 164,
+    "w": 192,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 64
+   },
+   "anchor": {
+    "x": 1,
+    "y": 0
+   }
+  },
+  "chasewall_debris_0": {
+   "frame": {
+    "x": 34,
+    "y": 230,
+    "w": 24,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 24
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "chasewall_debris_1": {
+   "frame": {
+    "x": 60,
+    "y": 230,
+    "w": 24,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 24
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "chasewall_debris_2": {
+   "frame": {
+    "x": 86,
+    "y": 230,
+    "w": 24,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 24
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "chasewall_edge": {
+   "frame": {
+    "x": 388,
+    "y": 164,
+    "w": 48,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 48,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 48,
+    "h": 64
+   },
+   "anchor": {
+    "x": 0,
+    "y": 0
+   }
+  },
+  "chasewall_gear_0": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 96,
+    "h": 96
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "chasewall_gear_1": {
+   "frame": {
+    "x": 98,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 96,
+    "h": 96
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "chasewall_gear_2": {
+   "frame": {
+    "x": 196,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 96,
+    "h": 96
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "chasewall_gear_3": {
+   "frame": {
+    "x": 294,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 96,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 96,
+    "h": 96
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "icon_camflip": {
+   "frame": {
+    "x": 438,
+    "y": 164,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  },
+  "noflip_move_arrow": {
+   "frame": {
+    "x": 0,
+    "y": 230,
+    "w": 32,
+    "h": 32
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "sourceSize": {
+    "w": 32,
+    "h": 32
+   },
+   "anchor": {
+    "x": 0.5,
+    "y": 0.5
+   }
+  }
+ },
+ "meta": {
+  "app": "flip-trap build_art6.py",
+  "image": "flip-trap-b6.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 512,
+   "h": 512
+  },
+  "scale": "1"
+ }
+}
