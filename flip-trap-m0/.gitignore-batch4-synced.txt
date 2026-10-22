@@ -1,0 +1,3 @@
+atlas/flip-trap-b4.*
+bg/w1_bg_*.webp
+audio/bgm_menu_loop.*
