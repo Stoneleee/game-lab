@@ -69,5 +69,6 @@
   {"slug":"plinko","name":"弹珠台","desc":"放下弹珠撞钉子，落进高倍格子。","emoji":"📍","cat":"物理"},
   {"slug":"lianliankan","name":"连连看","desc":"用不超过三段直线连接相同图案消除。","emoji":"🔗","cat":"益智"},
   {"slug":"lander","name":"登月挑战","desc":"控制推力，平稳降落在着陆台上。","emoji":"🌙","cat":"物理"},
-  {"slug":"dotsboxes","name":"点格棋","desc":"轮流画线，封闭格子就占领它。","emoji":"🔳","cat":"棋牌"}
+  {"slug":"dotsboxes","name":"点格棋","desc":"轮流画线，封闭格子就占领它。","emoji":"🔳","cat":"棋牌"},
+  {"slug":"demolition-salvage","name":"拆迁保全队","desc":"有限次数拆掉支撑，让废料落入回收箱，同时保住绿色小房间。","emoji":"🏗️","cat":"益智"}
 ]

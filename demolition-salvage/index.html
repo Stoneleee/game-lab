@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="拆迁保全队：有限次数拆掉支撑，让废料落入回收箱，同时保住绿色小房间。"/>
+<title>拆迁保全队</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="title-row">
+      <h1>拆迁保全队</h1>
+      <p id="sub">Demolition Salvage</p>
+    </div>
+    <div class="hud" id="hud">
+      <b id="level-name">第1关</b>
+      <b id="shots">弹药 1</b>
+      <b id="salvage">回收 0/1</b>
+      <b id="protect">保留</b>
+    </div>
+    <ul id="legend">
+      <li><i class="sw wood"></i>木能横连</li>
+      <li><i class="sw brick"></i>砖只靠下方</li>
+      <li><i class="sw prot"></i>绿房要保住</li>
+      <li><i class="sw steel"></i>钢架</li>
+      <li><i class="sw bin"></i>回收箱</li>
+    </ul>
+  </header>
+  <p id="hint"></p>
+  <p id="status" role="status"></p>
+  <div id="stage">
+    <div id="board" role="application" aria-label="拆迁剖面">
+      <div id="cells"></div>
+      <div id="ents"></div>
+      <canvas id="fx" aria-hidden="true"></canvas>
+    </div>
+  </div>
+  <div id="banner" role="status" hidden>
+    <p id="banner-text"></p>
+    <button id="next" type="button">下一关</button>
+  </div>
+  <div id="controls">
+    <button id="confirm" type="button">先点一块</button>
+    <button id="undo" type="button">撤销</button>
+    <button id="restart" type="button">重来</button>
+    <button id="levels" type="button">选关</button>
+    <button id="mute" type="button" aria-pressed="false">音效</button>
+  </div>
+</div>
+<div id="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="sheet-bar">
+      <h2 id="modal-title">选关</h2>
+      <button id="close-modal" type="button">关闭</button>
+    </div>
+    <div id="level-list"></div>
+  </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
