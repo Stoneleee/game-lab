@@ -1,6 +1,6 @@
 name: Deploy Pages
 on: { push: { branches: [main] }, workflow_dispatch: {} }
-permissions: { contents: read, pages: write, id-token: write }
+permissions: { contents: read, pages: write, id-token: write, actions: read }
 concurrency: { group: pages, cancel-in-progress: true }
 jobs:
   deploy:
@@ -8,7 +8,9 @@ jobs:
     environment: { name: github-pages, url: '${{ steps.d.outputs.page_url }}' }
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: . }
-      - id: d
-        uses: actions/deploy-pages@v4
+    - uses: actions/upload-pages-artifact@v3
+      with: { path: . }
+    - name: Wait for Pages artifact record
+      run: sleep 20
+    - id: d
+      uses: actions/deploy-pages@v4
