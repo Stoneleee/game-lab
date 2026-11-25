@@ -70,5 +70,11 @@
   {"slug":"lianliankan","name":"连连看","desc":"用不超过三段直线连接相同图案消除。","emoji":"🔗","cat":"益智"},
   {"slug":"lander","name":"登月挑战","desc":"控制推力，平稳降落在着陆台上。","emoji":"🌙","cat":"物理"},
   {"slug":"dotsboxes","name":"点格棋","desc":"轮流画线，封闭格子就占领它。","emoji":"🔳","cat":"棋牌"},
-  {"slug":"demolition-salvage","name":"拆迁保全队","desc":"有限次数拆掉支撑，让废料落入回收箱，同时保住绿色小房间。","emoji":"🏗️","cat":"益智"}
+  {"slug":"demolition-salvage","name":"拆迁保全队","desc":"有限次数拆掉支撑，让废料落入回收箱，同时保住绿色小房间。","emoji":"🏗️","cat":"益智"},
+  {"slug":"tidal-blocks","name":"潮汐拼块","desc":"点选形状摆上格子，公开的潮汐先把松块挤齐再消行。","emoji":"🌊","cat":"益智"},
+  {"slug":"road-test-lab","name":"拼路试车场","desc":"侧视试车，失败后只能改一段路，下一跑对照自己的影子。","emoji":"🚗","cat":"物理"},
+  {"slug":"heat-kitchen","name":"热力小食堂","desc":"在一口共享热锅里摆食材，挨着的菜分同一口底火。","emoji":"🍲","cat":"益智"},
+  {"slug":"salvage-rover","name":"回收救援车","desc":"三个槽拼一辆救援车，自动跑短路线，看承重和耗电。","emoji":"🚛","cat":"物理"},
+  {"slug":"wind-garden","name":"风吹小花园","desc":"转动风机把种子吹进花床，灌木会改下一阵风的路。","emoji":"🌱","cat":"益智"},
+  {"slug":"shared-battery-arena","name":"共用电池球场","desc":"小球场进球，双方冲刺和射门共用一块电池。","emoji":"🔋","cat":"物理"}
 ]
