@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="热力小食堂：在一口共享热锅里摆食材。挨着的菜平分底火，锅里菜越多每份越慢。"/>
+<meta name="theme-color" content="#f3e6d4"/>
+<title>热力小食堂</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect fill='%23c4552a' width='16' height='16' rx='3'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="titles">
+      <h1>热力小食堂</h1>
+      <p id="tagline"></p>
+    </div>
+    <button id="skip" type="button" hidden>跳过教学</button>
+    <button id="sound" type="button" aria-pressed="false">音效</button>
+  </header>
+  <section id="hud" aria-label="本班进度">
+    <b id="score"></b>
+    <b id="order"></b>
+    <b id="patience"></b>
+  </section>
+  <p id="notice" role="status"></p>
+  <section id="guest">
+    <div id="face" data-mood="calm" aria-hidden="true"><i></i><i></i><b></b></div>
+    <div class="guest-copy">
+      <div id="ask"></div>
+      <div id="next-order"></div>
+      <div id="bar" aria-hidden="true"><span id="bar-fill"></span></div>
+    </div>
+  </section>
+  <div id="stage">
+    <div id="pan" role="application" aria-label="四乘四热锅"></div>
+  </div>
+  <div id="under">
+    <button id="hold" type="button">保温台 · 空</button>
+    <div id="legend" aria-hidden="true">
+      <span data-b="0">冷</span>
+      <span data-b="2">温</span>
+      <span data-b="5">旺</span>
+    </div>
+  </div>
+  <div id="tray" role="group" aria-label="食材">
+    <button type="button" data-kind="noodle">面饼</button>
+    <button type="button" data-kind="egg">鸡蛋</button>
+    <button type="button" data-kind="greens">青菜</button>
+  </div>
+  <div id="actions">
+    <button id="serve" type="button">出餐</button>
+    <button id="discard" type="button">倒掉</button>
+    <button id="pause" type="button">暂停</button>
+    <button id="restart" type="button">重来</button>
+  </div>
+  <details id="rules">
+    <summary>热怎么走</summary>
+    <p id="rule"></p>
+  </details>
+</div>
+<div id="ghost" class="token" hidden aria-hidden="true"></div>
+<div id="overlay" hidden>
+  <div class="card" role="dialog" aria-modal="true" aria-labelledby="overlay-title">
+    <h2 id="overlay-title"></h2>
+    <p id="overlay-body"></p>
+    <div id="overlay-actions"></div>
+  </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
