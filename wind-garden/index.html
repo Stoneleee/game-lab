@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="风吹小花园：转动风机把种子吹进花床，长成的灌木会挡住风，下一粒种子走另一条路。"/>
+<title>风吹小花园</title>
+<link rel="icon" href="./assets/favicon.svg"/>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div>
+      <h1>风吹小花园</h1>
+      <p id="garden-name">顺风花床</p>
+    </div>
+    <div class="wish-col">
+      <p id="wish">花床 0/1</p>
+      <button id="next" type="button" hidden>下一座</button>
+    </div>
+  </header>
+  <p id="coach"></p>
+  <p id="cause" role="status"></p>
+  <div id="stage"><canvas id="board" width="320" height="240" aria-label="花园。点风机转向，点植物回收。"></canvas></div>
+  <div id="seeds">
+    <button id="seed-flower" type="button" aria-pressed="true">花籽</button>
+    <button id="seed-hedge" type="button" aria-pressed="false">灌木籽</button>
+    <button id="sow" type="button">播种</button>
+  </div>
+  <div id="tools">
+    <button id="rotate" type="button">转向</button>
+    <button id="undo" type="button">撤销</button>
+    <button id="recycle" type="button">回收</button>
+    <button id="restart" type="button">重来</button>
+    <button id="gardens" type="button">换园</button>
+    <button id="mute" type="button" aria-pressed="false">音效</button>
+  </div>
+  <p id="foot">进度只存在这台设备里，不用登录。</p>
+</div>
+<div id="sheet" hidden>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="sheet-bar">
+      <h2 id="sheet-title">换一座园</h2>
+      <button id="close-sheet" type="button">关闭</button>
+    </div>
+    <div id="garden-list"></div>
+  </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
