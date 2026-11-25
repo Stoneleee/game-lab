@@ -1,0 +1,151 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  overflow-x: clip;
+  background: #10262c;
+  color: #f4f7f8;
+  font-family: system-ui, -apple-system, "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+body { min-height: 100dvh; }
+button, p, h1 { font: inherit; }
+button {
+  font-weight: 750;
+  border: 0;
+  border-radius: 12px;
+  min-height: 44px;
+  padding: 8px 10px;
+  background: #24515c;
+  color: #f4f7f8;
+  cursor: pointer;
+}
+button:disabled { opacity: .4; cursor: default; }
+button:focus-visible, .cell:focus-visible, .piece:focus-visible {
+  outline: 3px solid #ffe08a;
+  outline-offset: 2px;
+}
+#app {
+  width: min(480px, 100%);
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: max(8px, env(safe-area-inset-top)) 10px calc(10px + env(safe-area-inset-bottom));
+}
+.title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+h1 { margin: 0; font-size: clamp(22px, 6vw, 28px); }
+#sub { margin: 0; color: #9ec3c6; font-size: 12px; }
+.hud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.hud b {
+  background: #1b3a42;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 13px;
+  font-weight: 750;
+}
+#tide-chip.left { background: #1d6a78; }
+#tide-chip.right { background: #8a4b2f; }
+#blurb, #coach, #status { margin: 0; line-height: 1.35; }
+#blurb { color: #c5dde0; font-size: 13px; }
+#coach {
+  color: #ffe08a;
+  font-size: 14px;
+  min-height: 2.7em;
+}
+#status { min-height: 1.35em; font-size: 15px; font-weight: 750; color: #d6fff4; }
+#status.bad { color: #ffb4a8; }
+#status.good { color: #b6f5c8; }
+#stage { display: flex; justify-content: center; }
+#board {
+  width: min(100%, 420px);
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 4px;
+  padding: 8px;
+  border-radius: 16px;
+  background: #0c1c22;
+  touch-action: manipulation;
+  position: relative;
+}
+#board.left { box-shadow: inset 6px 0 0 #3ec6d4; }
+#board.right { box-shadow: inset -6px 0 0 #e38b56; }
+.cell, .piece, #controls button, #seeds button { min-width: 0; }
+.cell {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border-radius: 8px;
+  background: #16343c;
+  color: transparent;
+  padding: 0;
+  position: relative;
+}
+.cell.loose { background: #e07a5f; }
+.cell.anchor { background: #8ea0b5; }
+.cell.anchor::after {
+  content: "";
+  position: absolute;
+  inset: 28%;
+  border-radius: 99px;
+  background: #24323f;
+}
+.cell.ghost { box-shadow: inset 0 0 0 3px #9ff3ea; }
+.cell.ghost::before {
+  content: "";
+  position: absolute;
+  inset: 28%;
+  border: 2px dashed #9ff3ea;
+  border-radius: 4px;
+}
+.cell.will-leave { outline: 2px dashed #f3c7bb; outline-offset: -5px; }
+.cell.will-clear { box-shadow: inset 0 0 0 3px #8dffc1; }
+.cell.loose.will-clear { background: #e07a5f; }
+.cell.ghost.will-clear { background: #16343c; box-shadow: inset 0 0 0 3px #8dffc1; }
+.cell.suggest { box-shadow: inset 0 0 0 3px #ffe08a; }
+.cell:disabled { cursor: default; }
+.piece {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  background: #1b3a42;
+}
+.piece.on { background: #c96b52; color: #1a120f; }
+.mini {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  gap: 2px;
+  flex: none;
+}
+.mini i {
+  display: block;
+  border-radius: 2px;
+  background: transparent;
+}
+.mini i.on { background: currentColor; }
+#hand {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+#hand-note { grid-column: 1 / -1; margin: 0; color: #c5dde0; font-size: 14px; min-height: 44px; }
+#controls, #seeds {
+  display: grid;
+  gap: 6px;
+}
+#controls { grid-template-columns: repeat(3, 1fr); }
+#seeds { grid-template-columns: repeat(4, 1fr); }
+#seeds button { min-height: 40px; font-size: 13px; padding: 6px 4px; background: #1b3a42; }
+#seeds button.on { background: #ffe08a; color: #1a120f; }
+#tide:not(:disabled) { background: #e07a5f; color: #1a120f; }
+@media (max-width: 380px) {
+  #app { gap: 5px; padding-left: 8px; padding-right: 8px; }
+  #coach { font-size: 13px; }
+  #controls { grid-template-columns: repeat(3, 1fr); }
+  #demo, #help { font-size: 13px; }
+}
