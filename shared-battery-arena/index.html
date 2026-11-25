@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="共用电池球场：两人在小球场进球，冲刺和大力射门花的是同一块电池。单机对电脑或本地双人，不是联网对战。"/>
+<link rel="icon" href="data:,"/>
+<title>共用电池球场</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <h1>共用电池球场</h1>
+      <p id="note">单机演示，不是联网匹配验证</p>
+    </div>
+    <div class="tools">
+      <button type="button" id="mode-ai" aria-pressed="true">对电脑</button>
+      <button type="button" id="mode-local" aria-pressed="false">本地双人</button>
+      <button type="button" id="tutorial">教程</button>
+      <button type="button" id="mute">静音</button>
+      <button type="button" id="restart">重开</button>
+    </div>
+  </header>
+  <div id="scoreline">
+    <span id="left-name">你</span>
+    <strong id="score">0 : 0</strong>
+    <span id="right-name">电脑</span>
+    <span id="clock">教程</span>
+  </div>
+  <div id="pack">
+    <i id="wire-l" class="wire" aria-hidden="true"></i>
+    <div class="cell-wrap">
+      <div id="meter" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-label="双方共用电池">
+        <span id="battery-fill"></span>
+      </div>
+      <span id="battery-text">共用电池 100</span>
+    </div>
+    <i id="wire-r" class="wire" aria-hidden="true"></i>
+  </div>
+  <p id="spend" role="status">教程进行中。这块黄条是双方共用的。</p>
+  <div id="stage">
+    <canvas id="pitch" width="900" height="520" aria-label="俯视小球场，把白球踢进右侧球门"></canvas>
+    <div id="card">
+      <p id="card-kicker">教程 1/4</p>
+      <h2 id="card-title">先移动</h2>
+      <p id="card-body"></p>
+      <div class="card-actions">
+        <button type="button" id="skip">跳过教程</button>
+        <button type="button" id="start-match" hidden>开始短赛</button>
+      </div>
+    </div>
+  </div>
+  <div id="controls">
+    <div id="stick" class="stick" role="application" aria-label="蓝方移动摇杆"><div id="nub" class="nub"></div></div>
+    <button type="button" id="sprint" class="action">冲刺</button>
+    <button type="button" id="kick" class="action">踢球</button>
+  </div>
+  <div id="p2controls" hidden>
+    <button type="button" id="sprint-p2" class="action">橙冲刺</button>
+    <button type="button" id="kick-p2" class="action">橙踢球</button>
+    <div id="stick-p2" class="stick" role="application" aria-label="橙方移动摇杆"><div id="nub-p2" class="nub"></div></div>
+  </div>
+  <p id="keys"></p>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
