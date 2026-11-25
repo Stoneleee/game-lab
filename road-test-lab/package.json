@@ -1,0 +1,8 @@
+{
+  "name": "road-test-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test sim.test.js"
+  }
+}

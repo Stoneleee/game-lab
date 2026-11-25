@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="拼路试车场：侧视驾驶短赛道，失败后只能旋转或替换一段路，下一跑对照自己的影子。"/>
+<title>拼路试车场</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div>
+      <h1>拼路试车场</h1>
+      <p id="sub">Road Test Lab</p>
+    </div>
+    <div class="hud">
+      <b id="level-name">弹板方向</b>
+      <b id="timer">0.0 秒</b>
+      <b id="best">最好 —</b>
+    </div>
+  </header>
+  <p id="hint"></p>
+  <p id="status" role="status"></p>
+  <canvas id="view" aria-label="侧视试车场"></canvas>
+  <div id="pieces"></div>
+  <div id="edit">
+    <button id="rotate" type="button" disabled>旋转这段</button>
+    <button type="button" data-type="flat" disabled>平路</button>
+    <button type="button" data-type="ramp" disabled>缓坡</button>
+    <button type="button" data-type="steep" disabled>陡坡</button>
+    <button type="button" data-type="kicker" disabled>弹板</button>
+  </div>
+  <div class="pedals">
+    <button id="brake" type="button">刹车</button>
+    <button id="throttle" type="button">油门</button>
+  </div>
+  <div id="bar">
+    <button id="rearm" type="button">重开</button>
+    <button id="restore" type="button">还原赛道</button>
+    <div id="tracks"></div>
+    <details id="help">
+      <summary>操作 / 示例解</summary>
+      <p>桌面按住 →、D 或 W 加油，按住 ←、A 或 S 刹车。R 或 Enter 重开。手机用下方大按钮。</p>
+      <p>摔车后点一段可改的路，旋转，或换成另一种路块。一次失败只能改一段。浅色车和轨迹是上一跑。</p>
+      <p id="solution"></p>
+    </details>
+  </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
