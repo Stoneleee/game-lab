@@ -1,0 +1,8 @@
+{
+  "name": "salvage-rover",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --check sim.js && node --check routes.js && node --check main.js && node --test sim.test.js"
+  }
+}
