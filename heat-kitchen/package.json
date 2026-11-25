@@ -1,0 +1,8 @@
+{
+  "name": "heat-kitchen",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test game.test.js"
+  }
+}

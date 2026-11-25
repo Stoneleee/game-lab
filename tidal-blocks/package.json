@@ -1,0 +1,8 @@
+{
+  "name": "tidal-blocks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test logic.test.js"
+  }
+}
