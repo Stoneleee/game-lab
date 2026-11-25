@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="潮汐拼块：在 6×6 盘上点选形状再点格摆放。公开的左右潮汐会先把松块挤齐，再消去因此排满的行和列。"/>
+<title>潮汐拼块</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="title-row">
+      <h1>潮汐拼块</h1>
+      <p id="sub">Tidal Blocks</p>
+    </div>
+    <div class="hud">
+      <b id="seed-name">第一潮</b>
+      <b id="tide-chip">左潮</b>
+      <b id="score">得分 0</b>
+      <b id="best">最佳 0</b>
+    </div>
+  </header>
+  <p id="blurb"></p>
+  <p id="coach"></p>
+  <p id="status" role="status"></p>
+  <div id="stage">
+    <div id="board" role="group" aria-label="6乘6潮汐棋盘"></div>
+  </div>
+  <div id="hand" aria-label="手牌"></div>
+  <div id="controls">
+    <button id="tide" type="button">涨潮</button>
+    <button id="undo" type="button">撤销</button>
+    <button id="restart" type="button">重开</button>
+    <button id="demo" type="button">看演示</button>
+    <button id="help" type="button">怎么玩</button>
+  </div>
+  <div id="seeds" aria-label="选关"></div>
+</div>
+<script type="module" src="./game.js"></script>
+</body>
+</html>
