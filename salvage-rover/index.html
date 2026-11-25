@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="回收救援车：三个槽拼一辆废料救援车，自动跑过短路线。槽位和装载会改变承重、耗电、能不能过坡，以及带回几箱。"/>
+<meta name="theme-color" content="#1a1612"/>
+<title>回收救援车</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 16 16'%3E%3Crect fill='%23e2a21a' width='16' height='16' rx='3'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="title-row">
+      <h1>回收救援车</h1>
+      <p id="sub">Salvage Rover</p>
+    </div>
+    <div class="hud">
+      <b id="route-name">坡底试车</b>
+      <b id="goal">目标 1 箱</b>
+      <b id="cargo-hud">货 0</b>
+      <b id="energy-hud">电 0</b>
+    </div>
+  </header>
+  <p id="coach"></p>
+  <p id="status" role="status" data-code=""></p>
+  <div id="stage">
+    <canvas id="view" width="640" height="360" aria-label="救援车侧视路测"></canvas>
+  </div>
+  <div id="workshop">
+    <div id="routes" role="tablist" aria-label="路线">
+      <button type="button" id="route-yard" data-route="yard">坡底试车</button>
+      <button type="button" id="route-steep" data-route="steep">陡坡减载</button>
+      <button type="button" id="route-mud" data-route="mud">软地回运</button>
+    </div>
+    <div id="parts" role="group" aria-label="零件">
+      <button type="button" id="part-battery" data-part="battery">电池</button>
+      <button type="button" id="part-bed" data-part="bed">货箱</button>
+      <button type="button" id="part-winch" data-part="winch">绞盘</button>
+      <button type="button" id="part-tracks" data-part="tracks">宽履</button>
+    </div>
+    <div id="slots" role="group" aria-label="车槽">
+      <button type="button" id="slot-front" data-slot="front"><span class="slot-k">前槽</span><span class="slot-sub">车头</span><span class="slot-part">空</span></button>
+      <button type="button" id="slot-mid" data-slot="mid"><span class="slot-k">中槽</span><span class="slot-sub">车身</span><span class="slot-part">空</span></button>
+      <button type="button" id="slot-rear" data-slot="rear"><span class="slot-k">后槽</span><span class="slot-sub">后轮</span><span class="slot-part">空</span></button>
+    </div>
+    <div id="load-row">
+      <button type="button" id="load-dec" aria-label="少装一箱">少装</button>
+      <b id="load-value">本次装载 1 箱</b>
+      <button type="button" id="load-inc" aria-label="多装一箱">多装</button>
+    </div>
+    <p id="preview"></p>
+    <div id="actions">
+      <button type="button" id="run">试车</button>
+      <button type="button" id="reset">重置装配</button>
+    </div>
+    <details id="rules">
+      <summary>规则</summary>
+      <ul>
+        <li>点一个零件，再点一个槽。点已经放上的零件，可以改到别的槽。</li>
+        <li>车架给前轴、后轴各 1 点承重。零件重量算在它所在的槽。中槽平分，多出来的 1 点算在后轴。</li>
+        <li>电池放前槽就驱动前轮，放后槽就驱动后轮。放中槽不会驱动。电池电量 60。</li>
+        <li>货箱空重 2。每装 1 箱再加重 2，最多 3 箱。本次装载是这一趟的上限。</li>
+        <li>上坡时，只要后轴比前轴重，前轮离地，车立刻停下。</li>
+        <li>缓坡要求驱动轮承重至少 2。陡坡至少 6。绞盘只有装在前槽，才在陡坡额外提供 4 点拉力，并且每步多耗 1 点电。</li>
+        <li>没有宽履，软地会陷住。软地每步多耗 3 点电。上坡每步再耗掉当时的总承重。平路每步耗 1 点。</li>
+        <li>开到回收点时，车上的箱数要达到目标。试车按固定步数演算，和屏幕快慢无关。</li>
+      </ul>
+    </details>
+    <button type="button" id="wipe">重置进度</button>
+  </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
